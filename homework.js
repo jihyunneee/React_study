@@ -3,6 +3,7 @@ class SimpleModal extends HTMLElement {
     constructor() {
         super();
 
+        // Shadow Root 생성
         this.attachShadow({mode: "open"});
         this._visible = false;
 
