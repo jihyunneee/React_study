@@ -8,19 +8,35 @@
 <body>
 <button onclick="document.querySelector('#modal1').show()">모달1</button>
 <button onclick="document.querySelector('#modal2').show()">모달2</button>
+<button onclick="document.querySelector('#modal2').show()">모달3</button>
+<button onclick="document.querySelector('#modal2').show()">모달4</button>
 
 <simple-modal
         id="modal1"
-        bgColor="yellow">
+        bgColor="red">
     <slot slot="title">모달1</slot>
     <slot slot="content">모달1 컨텐츠</slot>
 </simple-modal>
 
 <simple-modal
         id="modal2"
-        bgColor="white">
+        bgColor="orange">
     <slot slot="title">모달2</slot>
     <slot slot="content">모달2 컨텐츠</slot>
+</simple-modal>
+    
+<simple-modal
+        id="modal3"
+        bgColor="yellow">
+    <slot slot="title">모달3</slot>
+    <slot slot="content">모달3 컨텐츠</slot>
+</simple-modal>
+    
+<simple-modal
+        id="modal4"
+        bgColor="green">
+    <slot slot="title">모달4</slot>
+    <slot slot="content">모달4 컨텐츠</slot>
 </simple-modal>
 
 </body>
